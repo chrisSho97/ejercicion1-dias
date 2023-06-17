@@ -44,7 +44,7 @@ public class MainController {
   @GetMapping(path="/all")
   public @ResponseBody Iterable<mascotas> getAllmascotas() {
     // This returns a JSON or XML with the users
-    return userRepository.findAll();
+    return MascotasRepository.findAll();
   }
 
   @PutMapping(path="/edit")
